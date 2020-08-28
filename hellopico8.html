@@ -1,1 +1,60 @@
-hello world
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .card{
+                text-align:center;
+                background-color: lightblue; 
+                width: 50%; 
+                margin: auto;
+                padding-bottom: 10px;
+            }
+
+            .card img {
+                width: 100%;
+            }
+
+            .card:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+
+            .card:last-of-type {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body style="background-image: linear-gradient(141deg, rgb(61, 88, 78) 0%, 
+                                                           rgb(16, 172, 189) 51%,
+                                                           rgb(9, 139, 187) 75%);">
+        <div style="text-align: center;">
+            <h1>Hello Pico-8!!</h1>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <div class="card">
+                <h2>Loading a Game from the Pico-8 Carts Website</h2>
+                <h3>I downloaded a game onto the pico-8 directory and loaded from there. I used the pico-8 manual to learn to do this, since using my clipboard gave me issues.</h3>
+                <img src="./images/loadACart.gif" alt="Loading a cart"/>
+            </div>
+            <div class="card">
+                <h2>Pasting Code</h2>
+                <h3>I copied code from a game in BBS, pasted in Pico-8, and ran it.</h3>
+                <img src="./images/copySourceCode.gif" alt="Copying and pasting Pico-8 source code">
+            </div>
+            <div class="card">
+                <h2>Hello, Fidel!</h2>
+                <h3>I typed the first statement everyone types when learning a new language</h3>
+                <img src="./images/helloFidel.gif" alt="Gif of Writing and running a 'Hello World' statement">
+            </div>
+            <div class="card">
+                <h2>'Sploring the Splore menu</h2>
+                <h3>I ran the Splore command and looked around a couple of games. Notice that I already played and favorited a (literal) couple of games (they're good!)</h3>
+                <img src="./images/sploreMenu.gif" alt="Running the splore command and exploring the Splore menu">
+            </div>
+            <div class="card">
+                <h2>Finding the .p8 file directory</h2>
+                <h3>I found the place where the .p8 files were stored by using the 'Folder' command. It's relatively powerful considering the imaginary console's limitations</h3>
+                <img src="./images/pico-8_locationScreenshot.png" alt="Screenshot of the directory where Pico-8 stores its .p8 files">
+            </div>
+        </div>
+    </body>
+</html>
